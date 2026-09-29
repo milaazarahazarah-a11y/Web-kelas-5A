@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Kelas 5A</title>
+  <style>
+    /* CSS UNTUK TAMPILAN */
+    body {
+  font-family: sans-serif;
+  background-image: url("kelas5a.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+    
+
+    h1 { color: #1a253a; margin-top: 15px; font-size: 1.8em; }
+    p.deskripsi { color: #555; margin-bottom: 25px; }
+
+    /* Kotak Utama untuk Seluruh Profil */
+    .wadah-utama {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    /* Judul per seksi (Wali Kelas, Ketua, dll) */
+    .judul-jabatan {
+      width: 100%;
+      text-align: center;
+      color: #333;
+      margin: 20px 0 10px;
+      border-top: 2px dashed #ddd;
+      padding-top: 15px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    /* Baris untuk menata kartu agar berjejer kiri-kanan */
+    .baris-kartu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Kartu akan ke tengah */
+      gap: 15px; /* Jarak antar kartu */
+      width: 100%;
+    }
+
+    /* Desain Kartu Profil */
+    .kartu {
+      background: white;
+      border-radius: 10px;
+      padding: 8px;
+      width: 120px; /* Ukuran kartu lebih kecil biar muat */
+      box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+      border: 1px solid #eee;
+      margin: 5px;
+    }
+
+    /* Gaya Foto di Dalam Kartu */
+    .kartu img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 2px solid #ddd;
+    }
+
+    /* Gaya Tulisan Nama */
+    .kartu .nama {
+      font-weight: bold;
+      color: #222;
+      font-size: 0.9em;
+      margin: 8px 0 3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; /* Biar nama panjang gak berantakan */
+    }
+
+    /* Gaya Tulisan Jabatan */
+    .kartu .jabatan {
+      color: #007bff;
+      font-size: 0.8em;
+      margin: 0 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wadah-utama">
+    <h1>web Resmi, Struktur Pengurus Kelas 5A</h1>
+    <p class="deskripsi">Berikut adalah susunan pengurus untuk tahun ajaran ini.</p>
+
+    <div class="judul-jabatan">Wali Kelas 5A</div>
+    <div class="baris-kartu">
+      <div class="kartu">
+        <img src="https://via.placeholder.com/150" alt="Foto Wali Kelas">
+        <p class="nama">Ibu lia</p>
+        <p class="jabatan">Wali Kelas</p>
+      </div>
+    </div>
+
+
+    <div class="judul-jabatan">Ketua & Wakil Kelas</div>
+    <div class="baris-kartu">
+      <div class="kartu">
+        <img src="Rizki.jpg" alt="Foto Ketua">
+        <p class="nama">Rizki</p>
+        <p class="jabatan">Ketua Kelas</p>
+      </div>
+      <div class="kartu">
+        <img src="https://via.placeholder.com/150" alt="Foto Wakil">
+        <p class="nama">Nama Wakil</p>
+        <p class="jabatan">Wakil Ketua</p>
+      </div>
+    </div>
+
+
+    <div class="judul-jabatan">Sekretaris</div>
+    <div class="baris-kartu">
+      <div class="kartu">
+        <img src="thalita.jpg" alt="Sekretaris 1">
+        <p class="nama">Thalita 1</p>
+        <p class="jabatan">Sekretaris 1</p>
+      </div>
+      <div class="kartu">
+        <img src="Ailin.jpg" alt="Sekretaris 2">
+        <p class="nama">Ailin 2</p>
+        <p class="jabatan">Sekretaris 2</p>
+      </div>
+    </div>
+
+
+    <div class="judul-jabatan">Seksi Kebersihan</div>
+    <div class="baris-kartu">
+      <div class="kartu">
+        <img src="Beno.jpg" alt="Kebersihan 1">
+        <p class="nama">Beno 1</p>
+        <p class="jabatan">Kebersihan 1</p>
+      </div>
+      <div class="kartu">
+        <img src="nada.jpg" alt="Kebersihan 2">
+        <p class="nama">nada 2</p>
+        <p class="jabatan">Kebersihan 2</p>
+      </div>
+    </div>
+
+
+    <div class="judul-jabatan">Seksi Keamanan</div>
+    <div class="baris-kartu">
+      <div class="kartu">
+        <img src="https://via.placeholder.com/150" alt="Keamanan 1">
+        <p class="nama">Seksi Keamanan 1</p>
+        <p class="jabatan">Keamanan 1</p>
+      </div>
+      <div class="kartu">
+        <img src="https://via.placeholder.com/150" alt="Keamanan 2">
+        <p class="nama">Seksi Keamanan 2</p>
+        <p class="jabatan">Keamanan 2</p>
+      </div>
+    </div>
+
+  </div> </body>
+</html>
